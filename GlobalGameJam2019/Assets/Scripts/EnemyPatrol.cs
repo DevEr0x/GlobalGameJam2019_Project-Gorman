@@ -23,8 +23,6 @@ public class EnemyPatrol : MonoBehaviour
     void Update()
     {
         dist = Mathf.Sqrt((Mathf.Pow((transform.position.x - startPos.x), 2)));
-        Debug.Log(dist >= maxDist);
-        Debug.Log(dist);
 
         transform.position = new Vector3(Mathf.PingPong(Time.time * speed, maxDist - (maxDist * -1)) + (maxDist * -1), transform.position.y);
 
