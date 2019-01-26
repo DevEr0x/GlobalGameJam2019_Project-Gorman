@@ -24,33 +24,34 @@ public class PlayerController : MonoBehaviour
         transform.position += (move * speed * Time.deltaTime);
 
         if(Input.GetKeyDown(KeyCode.RightArrow)){ //Moving right
-            anim.SetBool("facingRight", true);
-            anim.SetBool("facingLeft", false);
-            anim.SetBool("facingUp", false);
-            anim.SetBool("facingDown", false);
-            anim.SetBool("isMoving", true);
+            anim.SetBool("isFacingRight", true);
+            anim.SetBool("isFacingLeft", false);
+            anim.SetBool("isFacingUp", false);
+            anim.SetBool("isFacingDown", false);
+            anim.SetBool("isWalking", true);
         }
          if(Input.GetKeyDown(KeyCode.LeftArrow)){ //Moving Left
-            anim.SetBool("facingRight", false);
-            anim.SetBool("facingLeft", true);
-            anim.SetBool("facingUp", false);
-            anim.SetBool("facingDown", false);
-            anim.SetBool("isMoving", true);
+            anim.SetBool("isFacingRight", false);
+            anim.SetBool("isFacingLeft", true);
+            anim.SetBool("isFacingUp", false);
+            anim.SetBool("isFacingDown", false);
+            anim.SetBool("isWalking", true);
         }
          if(Input.GetKeyDown(KeyCode.UpArrow)){ //Moving Up
-            anim.SetBool("facingRight", false);
-            anim.SetBool("facingLeft", false);
-            anim.SetBool("facingUp", true);
-            anim.SetBool("facingDown", false);
-            anim.SetBool("isMoving", true);
-        } if (Input.GetKeyDown(KeyCode.DownArrow)){ //Moving Down
-            anim.SetBool("facingRight", false);
-            anim.SetBool("facingLeft", false);
-            anim.SetBool("facingUp", false);
-            anim.SetBool("facingDown", true);
-            anim.SetBool("isMoving", true);
+            anim.SetBool("isFacingRight", false);
+            anim.SetBool("isFacingLeft", false);
+            anim.SetBool("isFacingUp", true);
+            anim.SetBool("isFacingDown", false);
+            anim.SetBool("isWalking", true);
+        }
+        if(Input.GetKeyDown(KeyCode.DownArrow)){ //Moving Down
+            anim.SetBool("isFacingRight", false);
+            anim.SetBool("isFacingLeft", false);
+            anim.SetBool("isFacingUp", false);
+            anim.SetBool("isFacingDown", true);
+            anim.SetBool("isWalking", true);
         }else{
-            anim.SetBool("isMoving", false);
+            anim.SetBool("isWalking", false);
         }
         
 
