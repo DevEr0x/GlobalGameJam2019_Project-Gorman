@@ -33,6 +33,15 @@ public class PuzzleManager : MonoBehaviour
                 }
                 PuzzleCheck(puzzles[0],pieces);
                 break;
+            case puzzChoice.PUZZLE2:
+                if (!spawned)
+                {
+                    spawned = true;
+                    pieces = Instantiate(puzzles[1], puzzSpawn.transform.position, Quaternion.identity, puzzSpawn.transform);
+                    PuzzleADD(pieces);
+                }
+                PuzzleCheck(puzzles[1], pieces);
+                break;
             case puzzChoice.NONE:
                 foreach (Transform c in puzzSpawn.transform)
                 {
