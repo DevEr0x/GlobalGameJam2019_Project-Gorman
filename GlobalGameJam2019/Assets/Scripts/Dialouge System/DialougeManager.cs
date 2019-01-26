@@ -10,7 +10,7 @@ public class DialougeManager : MonoBehaviour{
 
     public Animator animator;
 
-    private bool inConversation = false;
+    public static bool inConversation = false;
 
     private Queue<string> sentences;
     private Queue<string> names;
