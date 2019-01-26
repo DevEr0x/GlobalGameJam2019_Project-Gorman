@@ -5,12 +5,16 @@ using UnityEngine;
 public class EnemyPatrol : MonoBehaviour
 {
     public float maxDist;
+    public GameObject ball;
+    GameObject ballInst;
     Rigidbody2D rb;
     Vector3 rotationCenter;
     public float speed;
     Vector3 startpos;
+    Vector3 ballPos;
 
     public float rotationRadius = 10f;
+    public float throwRate, throwWait;
 
    private float posX, posY, angle = 0f;
 
@@ -19,7 +23,8 @@ public class EnemyPatrol : MonoBehaviour
         HORIZONTAL,
         VERTICAL,
         CIRCULAR,
-        DIAGONAL
+        DIAGONAL,
+        BALL
     }
 
     public patrolPat currentPat;
@@ -34,6 +39,7 @@ public class EnemyPatrol : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        ballPos = new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z);
         rotationCenter.x = startpos.x;
         rotationCenter.y = startpos.y-0.4f;
 
@@ -56,11 +62,31 @@ public class EnemyPatrol : MonoBehaviour
             case patrolPat.DIAGONAL:
                 transform.position = new Vector3(Mathf.PingPong(Time.time * speed, maxDist - (maxDist * -1)) + (maxDist * -1), Mathf.PingPong(Time.time * speed, maxDist - (maxDist * -1)) + (maxDist * -1));
                 break;
+            case patrolPat.BALL:
+                if (ballInst == null)
+                {
+                    ballInst = Instantiate(ball, ballPos, Quaternion.identity);
+                }
+                break;
         }
 
 
     }
-      
+
+    void ThrowBall()
+    {
+        ballInst.GetComponent<Rigidbody2D>().AddForce(new Vector3(0, speed, 0), ForceMode2D.Impulse);
 
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Ball")
+        {
+            Invoke("ThrowBall", 3);
+        }
+    }
+
+
+}
 
