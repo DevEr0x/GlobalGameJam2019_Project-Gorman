@@ -17,7 +17,7 @@ public class CameraController : MonoBehaviour
     {
         float interp = speed * Time.deltaTime;
 
-        if (player.transform.position.x >= 0 && player.transform.position.x <= 22)
+        if (player.transform.position.x >= 3 && player.transform.position.x <= 19)
         {
             Vector3 pos = transform.position;
             pos.x = Mathf.Lerp(transform.position.x, player.transform.position.x, interp);

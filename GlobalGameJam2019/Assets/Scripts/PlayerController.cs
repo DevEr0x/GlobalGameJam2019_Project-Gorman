@@ -21,12 +21,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        Debug.Log("right " + anim.GetBool("isFacingRight"));
-        Debug.Log("left "+ anim.GetBool("isFacingLeft"));
-
-        Debug.Log("up " + anim.GetBool("isFacingUp"));
-        Debug.Log("down " + anim.GetBool("isFacingDown"));
-
+       
 
         Debug.Log(Input.GetAxis("Horizontal") == 0);
         if (Input.GetAxis("Horizontal") > 0) {
