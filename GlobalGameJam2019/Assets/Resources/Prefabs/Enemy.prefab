@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 179289943975275151}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.98, y: 0.81, z: 0}
+  m_LocalPosition: {x: -8.67, y: -1.08, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -122,6 +122,7 @@ MonoBehaviour:
   maxDist: 0
   ball: {fileID: 2628306147600097296, guid: 6527dcc9e5824ca44a2f8cb0b6cd43c7, type: 3}
   speed: 0
+  pointA: {x: 0, y: 0, z: 0}
   rotationRadius: 10
   throwRate: 0
   throwWait: 0
