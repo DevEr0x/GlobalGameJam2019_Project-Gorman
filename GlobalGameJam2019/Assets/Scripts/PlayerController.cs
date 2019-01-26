@@ -53,7 +53,7 @@ public class PlayerController : MonoBehaviour
         }
         if  (dragging)
         {
-            drag.transform.position = new Vector2(mousePos.x, mousePos.y)
+            drag.transform.position = new Vector2(mousePos.x, mousePos.y);
         }
     }
 
