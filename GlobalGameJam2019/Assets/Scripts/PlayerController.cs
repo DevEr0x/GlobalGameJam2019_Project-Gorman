@@ -32,7 +32,9 @@ public class PlayerController : MonoBehaviour
                 if (hit.collider.gameObject.tag == "Draggable")
                 {
                     Rigidbody2D drag = hit.collider.gameObject.GetComponent<Rigidbody2D>();
-                    drag.transform.position = new Vector3(mousePos.x,mousePos.y);
+                    int offset = 32;
+                    Vector2 dragPos = new Vector2(Mathf.Round(mousePos.x/offset)*32,Mathf.Round(mousePos.y/offset)*32);
+                    drag.transform.position = dragPos;
                 }
             }
         }
