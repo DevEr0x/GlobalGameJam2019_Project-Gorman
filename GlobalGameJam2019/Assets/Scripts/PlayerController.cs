@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
         Vector3 move = new Vector3(Input.GetAxis("Horizontal"),Input.GetAxis("Vertical"));
         transform.position += (move * speed * Time.deltaTime);
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButton(0))
         {
             Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Vector2 mouse2D = new Vector2(mousePos.x,mousePos.y);
@@ -29,6 +29,11 @@ public class PlayerController : MonoBehaviour
             if (hit.collider != null)
             {
                 Debug.Log(hit.collider.gameObject.name);
+                if (hit.collider.gameObject.tag == "Draggable")
+                {
+                    Rigidbody2D drag = hit.collider.gameObject.GetComponent<Rigidbody2D>();
+                    drag.transform.position = new Vector3(mousePos.x,mousePos.y);
+                }
             }
         }
     }
