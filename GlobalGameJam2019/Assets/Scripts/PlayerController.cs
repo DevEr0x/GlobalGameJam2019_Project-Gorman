@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     public Rigidbody2D player;
 
     public float speed;
+    bool dragging = false;
 
     // Start is called before the first frame update
     void Start()
@@ -31,10 +32,17 @@ public class PlayerController : MonoBehaviour
                 Debug.Log(hit.collider.gameObject.name);
                 if (hit.collider.gameObject.tag == "Draggable")
                 {
-                    Rigidbody2D drag = hit.collider.gameObject.GetComponent<Rigidbody2D>();
-                    int offset = 32;
-                    Vector2 dragPos = new Vector2(Mathf.Round(mousePos.x/offset)*32,Mathf.Round(mousePos.y/offset)*32);
-                    drag.transform.position = dragPos;
+                    if (!dragging)
+                    {
+                        Rigidbody2D drag = hit.collider.gameObject.GetComponent<Rigidbody2D>();
+                        drag.transform.position = new Vector2(mousePos.x, mousePos.y);
+                        dragging = true;
+                    }
+                    else
+                    {
+
+                    }
+                    
                 }
             }
         }
