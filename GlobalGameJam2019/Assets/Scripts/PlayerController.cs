@@ -23,36 +23,33 @@ public class PlayerController : MonoBehaviour
         Vector3 move = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         transform.position += (move * speed * Time.deltaTime);
 
-        if(move.x > 0){
+        if(Input.GetKeyDown(KeyCode.RightArrow)){ //Moving right
             anim.SetBool("facingRight", true);
             anim.SetBool("facingLeft", false);
             anim.SetBool("facingUp", false);
             anim.SetBool("facingDown", false);
             anim.SetBool("isMoving", true);
         }
-        else if(move.x < 0){
+        else if(Input.GetKeyDown(KeyCode.LeftArrow)){ //Moving Left
             anim.SetBool("facingRight", false);
             anim.SetBool("facingLeft", true);
             anim.SetBool("facingUp", false);
             anim.SetBool("facingDown", false);
             anim.SetBool("isMoving", true);
         }
-        else if(move.y > 0){
+        else if(Input.GetKeyDown(KeyCode.UpArrow)){ //Moving Up
             anim.SetBool("facingRight", false);
             anim.SetBool("facingLeft", false);
             anim.SetBool("facingUp", true);
             anim.SetBool("facingDown", false);
             anim.SetBool("isMoving", true);
-        } else if (move.y < 0){
+        } else if (Input.GetKeyDown(KeyCode.DownArrow)){ //Moving Down
             anim.SetBool("facingRight", false);
             anim.SetBool("facingLeft", false);
             anim.SetBool("facingUp", false);
             anim.SetBool("facingDown", true);
             anim.SetBool("isMoving", true);
-        }
-
-        if(move.x == 0 && move.y == 0)
-        {
+        }else{
             anim.SetBool("isMoving", false);
         }
         
