@@ -30,20 +30,20 @@ public class PlayerController : MonoBehaviour
             anim.SetBool("facingDown", false);
             anim.SetBool("isMoving", true);
         }
-        else if(Input.GetKeyDown(KeyCode.LeftArrow)){ //Moving Left
+         if(Input.GetKeyDown(KeyCode.LeftArrow)){ //Moving Left
             anim.SetBool("facingRight", false);
             anim.SetBool("facingLeft", true);
             anim.SetBool("facingUp", false);
             anim.SetBool("facingDown", false);
             anim.SetBool("isMoving", true);
         }
-        else if(Input.GetKeyDown(KeyCode.UpArrow)){ //Moving Up
+         if(Input.GetKeyDown(KeyCode.UpArrow)){ //Moving Up
             anim.SetBool("facingRight", false);
             anim.SetBool("facingLeft", false);
             anim.SetBool("facingUp", true);
             anim.SetBool("facingDown", false);
             anim.SetBool("isMoving", true);
-        } else if (Input.GetKeyDown(KeyCode.DownArrow)){ //Moving Down
+        } if (Input.GetKeyDown(KeyCode.DownArrow)){ //Moving Down
             anim.SetBool("facingRight", false);
             anim.SetBool("facingLeft", false);
             anim.SetBool("facingUp", false);
