@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour
 
     public float speed;
     bool dragging = false;
+    Rigidbody2D drag;
+    Vector3 mousePos;
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +25,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Vector2 mouse2D = new Vector2(mousePos.x,mousePos.y);
 
             RaycastHit2D hit = Physics2D.Raycast(mouse2D,Vector2.zero);
@@ -34,13 +36,8 @@ public class PlayerController : MonoBehaviour
                 {
                     if (!dragging)
                     {
-                        Rigidbody2D drag = hit.collider.gameObject.GetComponent<Rigidbody2D>();
-                        drag.transform.position = new Vector2(mousePos.x, mousePos.y);
+                        drag = hit.collider.gameObject.GetComponent<Rigidbody2D>();
                         dragging = true;
-                    }
-                    else
-                    {
-
                     }
                     
                 }
@@ -48,6 +45,15 @@ public class PlayerController : MonoBehaviour
         }else if (Input.GetMouseButtonUp(0))
         {
             dragging = false;
+        }
+        if (Input.GetMouseButtonUp(0))
+        {
+            dragging = false;
+            drag = null;
+        }
+        if  (dragging)
+        {
+            drag.transform.position = new Vector2(mousePos.x, mousePos.y)
         }
     }
 
