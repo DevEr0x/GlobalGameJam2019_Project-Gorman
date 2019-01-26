@@ -15,6 +15,7 @@ public class EnemyPatrol : MonoBehaviour
     public float speed;
     Vector3 startpos;
     Vector3 ballPos;
+    private Vector3 currentPos;
     public Vector3 pointA;
 
 
@@ -29,16 +30,18 @@ public class EnemyPatrol : MonoBehaviour
         VERTICAL,
         CIRCULAR,
         DIAGONAL,
-        BALL
+        BALL,
+        PLAYERFOLLOW
     }
 
 
 
-    public patrolPat currentPat;
+    public patrolPat currentPat, previousPat;
 
     // Start is called before the first frame update
     void Start()
     {
+        
         playerStartPos = player.transform.position;
         blocked = false;
         hitWall = false;
@@ -49,7 +52,7 @@ public class EnemyPatrol : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        currentPos = transform.position;
         ballPos = new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z);
         rotationCenter.x = startpos.x;
         rotationCenter.y = startpos.y-0.4f;
@@ -89,6 +92,10 @@ public class EnemyPatrol : MonoBehaviour
                         ballInst = Instantiate(ball, ballPos, Quaternion.identity);
                     }
                     break;
+                case patrolPat.PLAYERFOLLOW:
+                    //  transform.LookAt(player.transform);
+                    transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+                    break;
             }
         }
 
@@ -118,6 +125,11 @@ public class EnemyPatrol : MonoBehaviour
         if(collision.gameObject.tag == "Player")
         {
             player.transform.position = playerStartPos;
+            if(currentPat == patrolPat.PLAYERFOLLOW)
+            {
+                currentPat = previousPat;
+                transform.position = startpos;
+            }
         }
     }
 

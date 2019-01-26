@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
             anim.SetBool("isFacingLeft", false);
 
             Vector3 temp = player.velocity;
-            temp.x = 2;
+            temp.x = 2*speed;
             player.velocity = temp;
            
         }
@@ -41,7 +41,7 @@ public class PlayerController : MonoBehaviour
             anim.SetBool("isFacingDown", false);
             anim.SetBool("isFacingLeft", true);
             Vector3 temp = player.velocity;
-            temp.x = -2;
+            temp.x = -2*speed;
             player.velocity = temp;
 
         }
@@ -52,7 +52,7 @@ public class PlayerController : MonoBehaviour
             anim.SetBool("isFacingDown", false);
             anim.SetBool("isFacingLeft", false);
             Vector3 temp = player.velocity;
-            temp.y = 2;
+            temp.y = 2*speed;
             player.velocity = temp;
 
         }
@@ -63,7 +63,7 @@ public class PlayerController : MonoBehaviour
             anim.SetBool("isFacingDown", true);
             anim.SetBool("isFacingLeft", false);
             Vector3 temp = player.velocity;
-            temp.y = -2;
+            temp.y = -2*speed;
             player.velocity = temp;
 
         }
