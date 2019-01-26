@@ -120,4 +120,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxDist: 0
+  ball: {fileID: 2628306147600097296, guid: 6527dcc9e5824ca44a2f8cb0b6cd43c7, type: 3}
   speed: 0
+  rotationRadius: 10
+  throwRate: 0
+  throwWait: 0
+  currentPat: 0
