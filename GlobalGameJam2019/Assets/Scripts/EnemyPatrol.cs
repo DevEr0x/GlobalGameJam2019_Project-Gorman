@@ -5,10 +5,12 @@ using UnityEngine;
 public class EnemyPatrol : MonoBehaviour
 {
     public float maxDist;
+    public GameObject player;
     public GameObject ball;
     GameObject ballInst;
     Rigidbody2D rb;
     Vector3 rotationCenter;
+    private Vector3 playerStartPos;
     private bool hitWall;
     public float speed;
     Vector3 startpos;
@@ -37,6 +39,7 @@ public class EnemyPatrol : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        playerStartPos = player.transform.position;
         blocked = false;
         hitWall = false;
         startpos = transform.position;
@@ -110,6 +113,11 @@ public class EnemyPatrol : MonoBehaviour
         if(collision.gameObject.tag == "Draggable")
         {
             blocked = true;
+        }
+
+        if(collision.gameObject.tag == "Player")
+        {
+            player.transform.position = playerStartPos;
         }
     }
 
