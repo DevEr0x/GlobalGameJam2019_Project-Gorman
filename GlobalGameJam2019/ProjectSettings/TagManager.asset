@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Draggable
   - Ball
+  - PUZZLE
+  - KILL
   layers:
   - Default
   - TransparentFX
@@ -45,4 +47,10 @@ TagManager:
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: PuzzBack
+    uniqueID: 2449930631
+    locked: 0
+  - name: Puzzle
+    uniqueID: 192049117
     locked: 0

@@ -5,9 +5,15 @@ using UnityEngine;
 public class BlockManager : MonoBehaviour
 {
     bool dragging = false;
-    Rigidbody2D drag;
+    Transform drag;
+    public PuzzleManager puzzle;
 
     Vector3 mousePos;
+
+    private void Start()
+    {
+        puzzle = this.gameObject.GetComponent<PuzzleManager>();
+    }
     // Update is called once per frame
     void Update()
     {
@@ -25,9 +31,24 @@ public class BlockManager : MonoBehaviour
                 {
                     if (!dragging)
                     {
-                        drag = hit.collider.gameObject.GetComponent<Rigidbody2D>();
+                        drag = hit.collider.gameObject.GetComponent<Transform>();
                         dragging = true;
                     }
+
+                }
+                else if (hit.collider.gameObject.tag == "PUZZLE")
+                {
+                    puzzle.puzzle = PuzzleManager.puzzChoice.PUZZLE1;
+
+                }
+                else if (hit.collider.gameObject.tag == "KILL")
+                {
+                    puzzle.puzzle = PuzzleManager.puzzChoice.NONE;
+
+                }
+                else if (hit.collider.gameObject.tag == "Ball")
+                {
+                    puzzle.PuzzleCheck(puzzle.pieces,puzzle.curPuzzPieces);
 
                 }
             }
