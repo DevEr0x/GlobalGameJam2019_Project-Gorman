@@ -26,9 +26,9 @@ public class PlayerController : MonoBehaviour
             Vector2 mouse2D = new Vector2(mousePos.x,mousePos.y);
 
             RaycastHit2D hit = Physics2D.Raycast(mouse2D,Vector2.zero);
-            if (hit.collider.gameObject.tag == "Player")
+            if (hit.collider != null)
             {
-                Debug.Log("Player Clicked");
+                Debug.Log(hit.collider.gameObject.name);
             }
         }
     }
