@@ -5,7 +5,6 @@ using UnityEngine;
 public class PuzzleManager : MonoBehaviour
 {
     public GameObject[] puzzles;
-    public List<GameObject> curPuzzPieces;
     public GameObject puzzSpawn;
     public GameObject pieces;
     bool spawned = false;
@@ -31,18 +30,13 @@ public class PuzzleManager : MonoBehaviour
                     spawned = true;
                     pieces = Instantiate(puzzles[0], puzzSpawn.transform.position, Quaternion.identity, puzzSpawn.transform);
                     PuzzleADD(pieces);
-                    PuzzleRand(curPuzzPieces);
                 }
-                
+                PuzzleCheck(puzzles[0],pieces);
                 break;
             case puzzChoice.NONE:
                 foreach (Transform c in puzzSpawn.transform)
                 {
                     GameObject.Destroy(c.gameObject);
-                }
-                foreach (GameObject g in curPuzzPieces)
-                {
-                    curPuzzPieces.Remove(g);
                 }
                 spawned = false;
                 break;
@@ -50,37 +44,42 @@ public class PuzzleManager : MonoBehaviour
     }
     public void PuzzleADD(GameObject _puzzle)
     {
-        Transform pieces = _puzzle.transform.Find("Pieces");
-        foreach (Transform c in pieces)
+        Transform pices = _puzzle.transform.Find("Pieces");
+        foreach (Transform c in pices)
         {
-            curPuzzPieces.Add(c.gameObject);
-        }
-    }
-    public void PuzzleRand(List<GameObject> _puzzle)
-    {
-        Debug.Log("Randomizing");
-        foreach (GameObject c in _puzzle)
-        {
-            float randOffsetX = Random.Range(-3,4);
-            float randOffsetY = Random.Range(-1.5f,0.5f);
-            Vector3 v = new Vector3(randOffsetX,randOffsetY);
+            float randOffsetX = Random.Range(-3, 4);
+            float randOffsetY = Random.Range(-1.5f, 0.5f);
+            Vector3 v = new Vector3(randOffsetX, randOffsetY);
             c.transform.position += v;
+            
         }
     }
-    public void PuzzleCheck(GameObject _puzzle,List<GameObject> _pieces)
+    public void PuzzleCheck(GameObject _corPuzzle,GameObject _curPieces)
     {
-        Transform pieces = _puzzle.transform.Find("Pieces");
+        bool breakout = false;
         
-        foreach (Transform t in pieces)
+        for (int i = 0;i<16;i++)
         {
-            foreach (GameObject g in _pieces)
+            Transform pices = _corPuzzle.transform.Find("Pieces");
+            Transform pces = _curPieces.transform.Find("Pieces");
+
+            Transform c = pices.transform.GetChild(i);
+            Transform h = pces.transform.GetChild(i);
+            float a = Mathf.Abs(c.position.x - h.position.x);
+            float b = Mathf.Abs(c.position.y - h.position.y);
+            float distance = Mathf.Sqrt(a * a + b * b);
+            if (distance > 2)
             {
-                if (g.transform.position.x == t.position.x && g.transform.position.y == t.position.y)
-                {
-                    g.SetActive(false);
-                }
+                breakout = true;
+                break;
             }
         }
+        if (breakout == false)
+        {
+            Debug.Log("Correct");
+        }
+
+        
     }
     
 }

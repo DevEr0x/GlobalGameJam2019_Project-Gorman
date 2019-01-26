@@ -19,14 +19,12 @@ public class BlockManager : MonoBehaviour
     {
         if (Input.GetMouseButton(0))
         {
-            Debug.Log("Click");
             mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Vector2 mouse2D = new Vector2(mousePos.x, mousePos.y);
 
             RaycastHit2D hit = Physics2D.Raycast(mouse2D, Vector2.zero);
             if (hit.collider != null)
             {
-                Debug.Log(hit.collider.gameObject.name);
                 if (hit.collider.gameObject.tag == "Draggable")
                 {
                     if (!dragging)
@@ -44,11 +42,6 @@ public class BlockManager : MonoBehaviour
                 else if (hit.collider.gameObject.tag == "KILL")
                 {
                     puzzle.puzzle = PuzzleManager.puzzChoice.NONE;
-
-                }
-                else if (hit.collider.gameObject.tag == "Ball")
-                {
-                    puzzle.PuzzleCheck(puzzle.pieces,puzzle.curPuzzPieces);
 
                 }
             }
