@@ -56,4 +56,6 @@ public class BlockManager : MonoBehaviour
             drag.transform.position = new Vector2(mousePos.x, mousePos.y);
         }
     }
+
+   
 }

@@ -18,7 +18,7 @@ public class EnemyPatrol : MonoBehaviour
 
     public float rotationRadius = 10f;
     public float throwRate, throwWait;
-
+    private bool blocked;
    private float posX, posY, angle = 0f;
 
     public enum patrolPat
@@ -37,6 +37,7 @@ public class EnemyPatrol : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        blocked = false;
         hitWall = false;
         startpos = transform.position;
         rb = GetComponent<Rigidbody2D>();
@@ -52,36 +53,40 @@ public class EnemyPatrol : MonoBehaviour
 
         posX = rotationCenter.x + Mathf.Cos(angle) * rotationRadius;
         posY = rotationCenter.y + Mathf.Sin(angle) * rotationRadius;
-        switch (currentPat)
+        if (blocked == false)
         {
-            case patrolPat.HORIZONTAL:
-                pointA.x = startpos.x+maxDist;
-                pointA.y = startpos.y;
-                transform.position = Vector3.Lerp(pointA, startpos, Mathf.PingPong(Time.time * speed, 1)); break;
-            case patrolPat.VERTICAL:
-                pointA.x = startpos.x;
-                pointA.y = startpos.y + maxDist;
-                transform.position = Vector3.Lerp(pointA, startpos, Mathf.PingPong(Time.time*speed, 1));
+            switch (currentPat)
+            {
+                case patrolPat.HORIZONTAL:
+                    pointA.x = startpos.x + maxDist;
+                    pointA.y = startpos.y;
+                    transform.position = Vector3.Lerp(pointA, startpos, Mathf.PingPong(Time.time * speed, 1));
+                    break;
+                case patrolPat.VERTICAL:
+                    pointA.x = startpos.x;
+                    pointA.y = startpos.y + maxDist;
+                    transform.position = Vector3.Lerp(pointA, startpos, Mathf.PingPong(Time.time * speed, 1));
 
-                //transform.position = new Vector3(transform.position.x, Mathf.PingPong(Time.time * speed, maxDist - (startpos.y)) + (maxDist * -1));
-                break;
-            case patrolPat.CIRCULAR:
-                transform.position = new Vector2(posX, posY);
-                angle = angle + Time.deltaTime * speed;
-                if (angle >= 360f)
-                    angle = 0f;
-                break;
-            case patrolPat.DIAGONAL:
-                pointA.x = startpos.x + maxDist;
-                pointA.y = startpos.y+maxDist;
-                transform.position = Vector3.Lerp(pointA, startpos, Mathf.PingPong(Time.time * speed, 1));
-                break;
-            case patrolPat.BALL:
-                if (ballInst == null)
-                {
-                    ballInst = Instantiate(ball, ballPos, Quaternion.identity);
-                }
-                break;
+                    //transform.position = new Vector3(transform.position.x, Mathf.PingPong(Time.time * speed, maxDist - (startpos.y)) + (maxDist * -1));
+                    break;
+                case patrolPat.CIRCULAR:
+                    transform.position = new Vector2(posX, posY);
+                    angle = angle + Time.deltaTime * speed;
+                    if (angle >= 360f)
+                        angle = 0f;
+                    break;
+                case patrolPat.DIAGONAL:
+                    pointA.x = startpos.x + maxDist;
+                    pointA.y = startpos.y + maxDist;
+                    transform.position = Vector3.Lerp(pointA, startpos, Mathf.PingPong(Time.time * speed, 1));
+                    break;
+                case patrolPat.BALL:
+                    if (ballInst == null)
+                    {
+                        ballInst = Instantiate(ball, ballPos, Quaternion.identity);
+                    }
+                    break;
+            }
         }
 
 
@@ -100,6 +105,19 @@ public class EnemyPatrol : MonoBehaviour
         if (collision.gameObject.tag == "Ball")
         {
             Invoke("ThrowBall", 3);
+        }
+
+        if(collision.gameObject.tag == "Draggable")
+        {
+            blocked = true;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Draggable")
+        {
+            blocked = false;
         }
     }
 
