@@ -807,15 +807,15 @@ MonoBehaviour:
     name:
     - Phone
     - Phone
-    - Phone
+    - Voicemail
     - Doctor Michael
     - Doctor Michael
     sentences:
     - '*Riiiiiinnnngggg.... Riiiiiiiinnnnngggg*'
     - '*Riiiiiiiiinnnngggg....... Riiiiiiiinnnnggggg*'
-    - '[Voicemail] "I''m sorry, NORMAN SWINCER cannot come to the phone right now.
-      Please leave your name, message, and your number where the recipient will be
-      able to call you back. Thank you. *BEEP*'
+    - '"I''m sorry, NORMAN SWINCER cannot come to the phone right now. Please leave
+      your name, message, and your number where the recipient will be able to call
+      you back. Thank you." *BEEP*'
     - '*Sigh* Hello, Norman. It''s Doctor Michael... again. I''m calling to inform
       you that your fathers condition is severely worsening by the day. At the rate
       things are going, he probably only has a few days left.'
