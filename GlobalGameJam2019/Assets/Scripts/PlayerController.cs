@@ -23,7 +23,6 @@ public class PlayerController : MonoBehaviour
     {
        
 
-        Debug.Log(Input.GetAxis("Horizontal") == 0);
         if (Input.GetAxis("Horizontal") > 0) {
             anim.SetBool("isFacingRight", true);
             anim.SetBool("isFacingUp", false);

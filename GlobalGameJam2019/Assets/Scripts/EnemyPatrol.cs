@@ -49,7 +49,7 @@ public class EnemyPatrol : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(hitWall);
+
         ballPos = new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z);
         rotationCenter.x = startpos.x;
         rotationCenter.y = startpos.y-0.4f;
