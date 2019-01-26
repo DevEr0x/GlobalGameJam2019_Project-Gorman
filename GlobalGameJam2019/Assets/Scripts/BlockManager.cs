@@ -36,7 +36,7 @@ public class BlockManager : MonoBehaviour
                 }
                 else if (hit.collider.gameObject.tag == "PUZZLE")
                 {
-                    puzzle.puzzle = PuzzleManager.puzzChoice.PUZZLE1;
+                    puzzle.puzzle = PuzzleManager.puzzChoice.PUZZLE2;
 
                 }
                 else if (hit.collider.gameObject.tag == "KILL")
