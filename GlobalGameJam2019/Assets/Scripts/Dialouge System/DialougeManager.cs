@@ -13,21 +13,36 @@ public class DialougeManager : MonoBehaviour{
     private bool inConversation = false;
 
     private Queue<string> sentences;
+    private Queue<string> names;
+
+    private int nameCount;
+    private int sentenceCount;
 
     void Start(){
         sentences = new Queue<string>();
+        names = new Queue<string>();
     }
 
     public void StartDialouge(Dialouge dialouge) {
-        Debug.Log("Starting Dialouge with " + dialouge.name);
-        dialougeName.text = dialouge.name;
+        Debug.Log("Starting Dialouge");
         sentences.Clear();
+        names.Clear();
         inConversation = true;
         animator.SetBool("inDialouge", true);
 
         foreach (string sentence in dialouge.sentences)
         {
             sentences.Enqueue(sentence);
+            sentenceCount++;
+        }
+
+        foreach(string name in dialouge.name){
+            names.Enqueue(name);
+            nameCount++;
+        }
+
+        if(nameCount != sentenceCount){
+            Debug.Log("OH DANG! There are "+ nameCount + "names and " + sentenceCount + "sentences! If those numbers ain't adding up, FIX IT!");
         }
 
         DisplayNextSentence();
@@ -39,8 +54,10 @@ public class DialougeManager : MonoBehaviour{
                 return;
             }
         string sentence = sentences.Dequeue();
+        string name = names.Dequeue();
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
+        dialougeName.text = name;
         Debug.Log(sentence);
         }
 
