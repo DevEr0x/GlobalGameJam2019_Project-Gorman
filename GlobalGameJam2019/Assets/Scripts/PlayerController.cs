@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     Rigidbody2D player;
 
+    public bool disablecamera = false;
     public PuzzleManager puzzle;
     public Camera cam;
     Animator anim;
@@ -26,28 +27,31 @@ public class PlayerController : MonoBehaviour
     {
         interp = speed * Time.deltaTime;
         Vector3 pos = cam.transform.position;
-        if (transform.position.x > minscrollX && transform.position.x < maxscrollX)
+        if (disablecamera == false)
         {
-            pos.x = Mathf.Lerp(cam.transform.position.x, transform.position.x, interp);
+            if (transform.position.x > minscrollX && transform.position.x < maxscrollX)
+            {
+                pos.x = Mathf.Lerp(cam.transform.position.x, transform.position.x, interp);
 
+            }
+            if (transform.position.y > minscrollY && transform.position.y < maxscrollY)
+            {
+                pos.y = Mathf.Lerp(cam.transform.position.y, transform.position.y, interp);
+
+            }
+            cam.transform.position = pos;
         }
-        if (transform.position.y > minscrollY && transform.position.y < maxscrollY)
+        if (Input.GetAxis("Horizontal") > 0)
         {
-            pos.y = Mathf.Lerp(cam.transform.position.y, transform.position.y, interp);
-
-        }
-        cam.transform.position = pos;
-
-        if (Input.GetAxis("Horizontal") > 0) {
             anim.SetBool("isFacingRight", true);
             anim.SetBool("isFacingUp", false);
             anim.SetBool("isFacingDown", false);
             anim.SetBool("isFacingLeft", false);
 
             Vector3 temp = player.velocity;
-            temp.x = 2*speed;
+            temp.x = 2 * speed;
             player.velocity = temp;
-           
+
         }
         if (Input.GetAxis("Horizontal") < 0)
         {
@@ -56,7 +60,7 @@ public class PlayerController : MonoBehaviour
             anim.SetBool("isFacingDown", false);
             anim.SetBool("isFacingLeft", true);
             Vector3 temp = player.velocity;
-            temp.x = -2*speed;
+            temp.x = -2 * speed;
             player.velocity = temp;
 
         }
@@ -67,7 +71,7 @@ public class PlayerController : MonoBehaviour
             anim.SetBool("isFacingDown", false);
             anim.SetBool("isFacingLeft", false);
             Vector3 temp = player.velocity;
-            temp.y = 2*speed;
+            temp.y = 2 * speed;
             player.velocity = temp;
 
         }
@@ -78,7 +82,7 @@ public class PlayerController : MonoBehaviour
             anim.SetBool("isFacingDown", true);
             anim.SetBool("isFacingLeft", false);
             Vector3 temp = player.velocity;
-            temp.y = -2*speed;
+            temp.y = -2 * speed;
             player.velocity = temp;
 
         }
@@ -97,7 +101,7 @@ public class PlayerController : MonoBehaviour
             player.velocity = temp;
 
         }
-        if(player.velocity.x != 0 || player.velocity.y != 0)
+        if (player.velocity.x != 0 || player.velocity.y != 0)
         {
             anim.SetBool("isWalking", true);
         }
@@ -105,12 +109,13 @@ public class PlayerController : MonoBehaviour
         {
             anim.SetBool("isWalking", false);
         }
-        
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "Dialouge"){
+        if (collision.gameObject.tag == "Dialouge")
+        {
             collision.gameObject.GetComponent<DialougeTrigger>().TriggerDialouge();
             Destroy(collision);
         }
