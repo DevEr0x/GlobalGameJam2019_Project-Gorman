@@ -12,6 +12,8 @@ TagManager:
   - BALL
   - MOP
   - Dialouge
+  - Undefined
+  - Level3
   layers:
   - Default
   - TransparentFX
