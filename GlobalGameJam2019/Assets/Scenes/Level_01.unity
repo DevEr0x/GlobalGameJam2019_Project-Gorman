@@ -51701,6 +51701,11 @@ PrefabInstance:
       propertyPath: currentPat
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 136097837649095348, guid: 7c3fe22982525804c9990b6995a60d42,
+        type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 1313774497}
     - target: {fileID: 4312732470225089510, guid: 7c3fe22982525804c9990b6995a60d42,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -51884,8 +51889,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 931012662}
-  minscroll: 0
-  maxscroll: 100
+  minscrollX: 0
+  maxscrollX: 0
+  minscrollY: 0
+  maxscrollY: 0
 --- !u!1 &1314697203
 GameObject:
   m_ObjectHideFlags: 0

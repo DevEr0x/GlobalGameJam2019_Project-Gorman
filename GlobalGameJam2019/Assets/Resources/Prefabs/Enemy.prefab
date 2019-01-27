@@ -119,11 +119,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5ea84edb545d384896c40a22c0334b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDist: 0
+  maxDist: 10
+  cam: {fileID: 0}
+  player: {fileID: 0}
   ball: {fileID: 2628306147600097296, guid: 6527dcc9e5824ca44a2f8cb0b6cd43c7, type: 3}
-  speed: 0
-  pointA: {x: 0, y: 0, z: 0}
+  speed: 1
   rotationRadius: 10
   throwRate: 0
   throwWait: 0
-  currentPat: 0
+  currentPat: 1
+  previousPat: 0
