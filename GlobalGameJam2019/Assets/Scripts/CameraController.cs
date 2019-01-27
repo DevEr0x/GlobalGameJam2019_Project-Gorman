@@ -5,31 +5,28 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
     public GameObject player;
-    public GameObject cam;
     float interp;
     float speed;
     // Start is called before the first frame update
     void Start()
     {
-        speed = 100.0f;
+        speed = 10.0f;
     }
 
     // Update is called once per frame
     void Update()
     {
-       interp = speed * Time.deltaTime;
-
-     
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if(collision.gameObject.tag == "Player")
+        if (player.transform.position.x >= 0 && player.transform.position.x <= 74)
         {
-            Vector3 pos = cam.transform.position;
-            pos.x = Mathf.Lerp(cam.transform.position.x, player.transform.position.x, interp);
+            interp = speed * Time.deltaTime;
+            Vector3 pos = transform.position;
+            pos.x = Mathf.Lerp(transform.position.x, player.transform.position.x, interp);
+            transform.position = pos;
 
-            cam.transform.position = pos;
         }
+
+
     }
+
+    
 }
