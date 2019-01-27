@@ -729,11 +729,57 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialouge:
     name:
-    - Testing
-    - testing
+    - Gorman
+    - Gorman
+    - Gorman
+    - Gorman
+    - Gorman
+    - Gorman
+    - Gorman
+    - Gorman
+    - Gorman
+    - Gorman
+    - Gorman
+    - Gorman
+    - Gorman
+    - Gorman
+    - '...'
+    - '...'
+    - '...'
+    - Narrator
     sentences:
-    - ok 1
-    - 222
+    - I remember everything now.
+    - No more confusion.
+    - Growing up, I was a very lonely child. I didn't have any friends, and all the
+      other kids gained pleasure from my misery. I was their target for all their
+      bullying.
+    - But that's why I had Bylow. Bylow was such an amazing pup.. always there for
+      me when I was sad. He was always BY my side when I felt LOW. Heh.
+    - I always thought that name was clever. Dad thought it was stupid... I didn't
+      care.
+    - I didn't want any kids to have a childhood as poor as mine, so I was going to
+      University to become a teacher... although I wasn't the smartest.. I failed
+      more than a few classes.
+    - It didn't matter though... Melissa covered me when I wasn't able to cover myself.
+      She helped support us while I made my dreams come true..
+    - After the accident though, I had to drop out. I needed to work full time to
+      support Norman and I.
+    - I still wanted to make kids happy though.. and Norman wanted nothing to do with
+      me.
+    - I'm glad I was really able to have an impact on the kids at that school.
+    - Yeah, I guess you could say that I've had a pretty crazy life. Full of happiness
+      and struggles.
+    - But that's same with everyone, right? As long as you have a wonderful home to
+      love and cherrish, it's all worth it.
+    - Home you ask? Well, home is whatever makes you feel complete. Home is where
+      you're comfortable. Home is where you're loved and by extension, who you love.
+    - I was very very happy with my home..
+    - '...'
+    - '....'
+    - '.....'
+    - And just like that, as the doctor rushes in to the sound of a heart monitor
+      flat-lining, Gorman's going home. Thank you for helping Gorman find his way
+      home.
 --- !u!1 &1527614254
 GameObject:
   m_ObjectHideFlags: 0
