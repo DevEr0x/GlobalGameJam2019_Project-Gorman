@@ -126,15 +126,24 @@ public class PlayerController : MonoBehaviour
             SceneManager.LoadScene("Level_04");
         }
 
-            if (collision.gameObject.tag == "BALL")
+        if (collision.gameObject.tag == "BALL")
         {
             puzzle.puzzle = PuzzleManager.puzzChoice.PUZZLE1;
             Destroy(this.gameObject);
         }
         else if (collision.gameObject.tag == "MOP")
         {
-            Debug.Log("Mop collide");
             puzzle.puzzle = PuzzleManager.puzzChoice.PUZZLE2;
+            Destroy(this.gameObject);
+        }
+        if (collision.gameObject.tag == "RING")
+        {
+            puzzle.puzzle = PuzzleManager.puzzChoice.PUZZLE3;
+            Destroy(this.gameObject);
+        }
+        else if (collision.gameObject.tag == "HAT")
+        {
+            puzzle.puzzle = PuzzleManager.puzzChoice.PUZZLE4;
             Destroy(this.gameObject);
         }
     }

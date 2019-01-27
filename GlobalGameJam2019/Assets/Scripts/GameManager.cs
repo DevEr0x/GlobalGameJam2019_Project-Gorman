@@ -35,7 +35,7 @@ public class GameManager : MonoBehaviour
         }
         else if (puuuuu.state == PuzzleManager.STATE.HAT && swap)
         {
-            SceneManager.LoadScene("Level_03", LoadSceneMode.Single);
+            SceneManager.LoadScene("Conclusion", LoadSceneMode.Single);
         }
     }
 }

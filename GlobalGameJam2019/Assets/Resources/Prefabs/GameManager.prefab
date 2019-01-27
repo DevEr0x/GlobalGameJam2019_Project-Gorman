@@ -78,8 +78,8 @@ MonoBehaviour:
   puzzles:
   - {fileID: 9055777332348545425, guid: 2f9bc349effb14d4195b581b41922d46, type: 3}
   - {fileID: 843199115632767022, guid: bddd3668cbe76b24fa10c9dfe5d49fca, type: 3}
-  - {fileID: 843199115632767022, guid: bddd3668cbe76b24fa10c9dfe5d49fca, type: 3}
-  - {fileID: 843199115632767022, guid: bddd3668cbe76b24fa10c9dfe5d49fca, type: 3}
+  - {fileID: 843199115632767022, guid: 8cabfdf3d46da4741b6d3cae3cd2606d, type: 3}
+  - {fileID: 843199115632767022, guid: 7ed1896da41627b47b3cec45099f5ff9, type: 3}
   puzzSpawn: {fileID: 0}
   pieces: {fileID: 0}
   game: {fileID: 2749626825159647498}

@@ -14,6 +14,7 @@ TagManager:
   - Dialouge
   - Undefined
   - Level3
+  - RING
   layers:
   - Default
   - TransparentFX

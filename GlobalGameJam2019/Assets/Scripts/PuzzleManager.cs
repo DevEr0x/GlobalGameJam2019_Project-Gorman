@@ -56,7 +56,6 @@ public class PuzzleManager : MonoBehaviour
             case puzzChoice.PUZZLE2:
                 if (!spawned)
                 {
-                    Debug.Log("Spawn Try");
                     spawned = true;
                     Camera.main.transform.SetPositionAndRotation(new Vector3(0, 0, -1), Quaternion.identity);
                     pieces = Instantiate(puzzles[1], new Vector2(Camera.main.transform.position.x, Camera.main.transform.position.y), Quaternion.identity, puzzSpawn.transform);
@@ -66,6 +65,38 @@ public class PuzzleManager : MonoBehaviour
                 {
                     puzzle = puzzChoice.NONE;
                     state = STATE.MOP;
+                    spawned = false;
+                    game.swap = true;
+                }
+                break;
+            case puzzChoice.PUZZLE3:
+                if (!spawned)
+                {
+                    spawned = true;
+                    Camera.main.transform.SetPositionAndRotation(new Vector3(0, 0, -1), Quaternion.identity);
+                    pieces = Instantiate(puzzles[2], new Vector2(Camera.main.transform.position.x, Camera.main.transform.position.y), Quaternion.identity, puzzSpawn.transform);
+                    PuzzleADD(pieces);
+                }
+                if (PuzzleCheck(puzzles[2], pieces))
+                {
+                    puzzle = puzzChoice.NONE;
+                    state = STATE.RING;
+                    spawned = false;
+                    game.swap = true;
+                }
+                break;
+            case puzzChoice.PUZZLE4:
+                if (!spawned)
+                {
+                    spawned = true;
+                    Camera.main.transform.SetPositionAndRotation(new Vector3(0, 0, -1), Quaternion.identity);
+                    pieces = Instantiate(puzzles[3], new Vector2(Camera.main.transform.position.x, Camera.main.transform.position.y), Quaternion.identity, puzzSpawn.transform);
+                    PuzzleADD(pieces);
+                }
+                if (PuzzleCheck(puzzles[3], pieces))
+                {
+                    puzzle = puzzChoice.NONE;
+                    state = STATE.RING;
                     spawned = false;
                     game.swap = true;
                 }
