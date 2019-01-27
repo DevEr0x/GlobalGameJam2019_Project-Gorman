@@ -7,15 +7,27 @@ public class PuzzleManager : MonoBehaviour
     public GameObject[] puzzles;
     public GameObject puzzSpawn;
     public GameObject pieces;
+    Transform back;
     bool spawned = false;
+
     public enum puzzChoice
     {
         NONE,
         PUZZLE1,
         PUZZLE2,
-        PUZZLE3
+        PUZZLE3,
+        PUZZLE4
     }
     public puzzChoice puzzle;
+    public enum STATE
+    {
+        NONE,
+        BALL,
+        MOP,
+        RING,
+        HAT
+    }
+    public STATE state;
     // Start is called before the first frame update
     void Awake()
     {
@@ -31,7 +43,11 @@ public class PuzzleManager : MonoBehaviour
                     pieces = Instantiate(puzzles[0], puzzSpawn.transform.position, Quaternion.identity, puzzSpawn.transform);
                     PuzzleADD(pieces);
                 }
-                PuzzleCheck(puzzles[0],pieces);
+                if (PuzzleCheck(puzzles[0], pieces))
+                {
+                    puzzle = puzzChoice.NONE;
+                    state = STATE.BALL;
+                }
                 break;
             case puzzChoice.PUZZLE2:
                 if (!spawned)
@@ -40,7 +56,11 @@ public class PuzzleManager : MonoBehaviour
                     pieces = Instantiate(puzzles[1], puzzSpawn.transform.position, Quaternion.identity, puzzSpawn.transform);
                     PuzzleADD(pieces);
                 }
-                PuzzleCheck(puzzles[1], pieces);
+                if (PuzzleCheck(puzzles[1], pieces))
+                {
+                    puzzle = puzzChoice.NONE;
+                    state = STATE.MOP;
+                }
                 break;
             case puzzChoice.NONE:
                 foreach (Transform c in puzzSpawn.transform)
@@ -53,6 +73,8 @@ public class PuzzleManager : MonoBehaviour
     }
     public void PuzzleADD(GameObject _puzzle)
     {
+        back = _puzzle.transform.Find("Background");
+        back.localScale = new Vector3(Camera.main.pixelWidth,Camera.main.pixelHeight);
         Transform pices = _puzzle.transform.Find("Pieces");
         foreach (Transform c in pices)
         {
@@ -63,7 +85,7 @@ public class PuzzleManager : MonoBehaviour
             
         }
     }
-    public void PuzzleCheck(GameObject _corPuzzle,GameObject _curPieces)
+    public bool PuzzleCheck(GameObject _corPuzzle,GameObject _curPieces)
     {
         bool breakout = false;
         
@@ -86,6 +108,11 @@ public class PuzzleManager : MonoBehaviour
         if (breakout == false)
         {
             Debug.Log("Correct");
+            return true;
+        }
+        else
+        {
+            return false;
         }
 
         
