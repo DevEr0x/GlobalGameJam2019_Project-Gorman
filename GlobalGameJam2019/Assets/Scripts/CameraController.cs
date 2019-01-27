@@ -5,8 +5,8 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
     public GameObject player;
-    public GameObject cam;
     float interp;
+    float minscroll, maxscroll;
     float speed;
     // Start is called before the first frame update
     void Start()
@@ -18,18 +18,18 @@ public class CameraController : MonoBehaviour
     void Update()
     {
        interp = speed * Time.deltaTime;
-
-     
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if(collision.gameObject.tag == "Player")
+        if (player.transform.position.x > minscroll && player.transform.position.x < maxscroll)
         {
-            Vector3 pos = cam.transform.position;
-            pos.x = Mathf.Lerp(cam.transform.position.x, player.transform.position.x, interp);
+            Vector3 pos = transform.position;
+            pos.x = Mathf.Lerp(transform.position.x, transform.position.x, interp);
 
-            cam.transform.position = pos;
+            transform.position = pos;
         }
+
     }
+
+    
+        
+        
+    
 }

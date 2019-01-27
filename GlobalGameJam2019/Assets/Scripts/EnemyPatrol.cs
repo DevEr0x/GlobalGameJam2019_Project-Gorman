@@ -14,9 +14,9 @@ public class EnemyPatrol : MonoBehaviour
     private bool hitWall;
     public float speed;
     Vector3 startpos;
+    Vector3 pointA;
     Vector3 ballPos;
     private Vector3 currentPos;
-    public Vector3 pointA;
 
 
     public float rotationRadius = 10f;
@@ -46,6 +46,7 @@ public class EnemyPatrol : MonoBehaviour
         blocked = false;
         hitWall = false;
         startpos = transform.position;
+        Debug.Log(transform.position.x);
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -56,7 +57,6 @@ public class EnemyPatrol : MonoBehaviour
         ballPos = new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z);
         rotationCenter.x = startpos.x;
         rotationCenter.y = startpos.y-0.4f;
-
         posX = rotationCenter.x + Mathf.Cos(angle) * rotationRadius;
         posY = rotationCenter.y + Mathf.Sin(angle) * rotationRadius;
         if (blocked == false)
