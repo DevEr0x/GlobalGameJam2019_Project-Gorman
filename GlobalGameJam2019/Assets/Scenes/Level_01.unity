@@ -87872,6 +87872,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 931012662}
+    - target: {fileID: 136097837649095348, guid: 7c3fe22982525804c9990b6995a60d42,
+        type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 1313774497}
     - target: {fileID: 4312732470225089510, guid: 7c3fe22982525804c9990b6995a60d42,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -88176,6 +88181,21 @@ PrefabInstance:
       propertyPath: puzzle
       value: 
       objectReference: {fileID: 434224140}
+    - target: {fileID: 7069431889291429806, guid: 6979f2e6ccfdeb64c83bd52d733672a5,
+        type: 3}
+      propertyPath: maxscrollX
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 7069431889291429806, guid: 6979f2e6ccfdeb64c83bd52d733672a5,
+        type: 3}
+      propertyPath: maxscrollY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7069431889291429806, guid: 6979f2e6ccfdeb64c83bd52d733672a5,
+        type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 1313774499}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6979f2e6ccfdeb64c83bd52d733672a5, type: 3}
 --- !u!1001 &8775764028340405782
