@@ -33,15 +33,13 @@ public class BlockManager : MonoBehaviour
                         dragging = true;
                         drag.bodyType = RigidbodyType2D.Dynamic;
                     }
-
                 }
-                else if (hit.collider.gameObject.tag == "Draggable" && hit.collider.gameObject.name == "Spec")
+                if (hit.collider.gameObject.tag == "PUZZLE")
                 {
                     if (!dragging)
                     {
                         drag = hit.collider.gameObject.GetComponent<Rigidbody2D>();
                         dragging = true;
-                        drag.bodyType = RigidbodyType2D.Dynamic;
                     }
                 }
                 else if (hit.collider.gameObject.tag == "PUZZLE")
