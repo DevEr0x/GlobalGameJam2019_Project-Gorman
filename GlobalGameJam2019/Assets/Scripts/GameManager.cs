@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     PuzzleManager puuuuu;
     public bool swap = false;
 
-    public bool firstDone = false;
+    public static bool firstDone = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour
             if (firstDone == false)
             {
                 GameObject.Find("Dialouge07").GetComponent<DialougeTrigger>().TriggerDialouge();
+                PlayerController.disablecamera = false;
                 firstDone = true;
             }
             //SceneManager.LoadScene("Level_02", LoadSceneMode.Single);
