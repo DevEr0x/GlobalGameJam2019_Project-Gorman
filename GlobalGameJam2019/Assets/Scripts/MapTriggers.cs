@@ -18,12 +18,12 @@ public class MapTriggers : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(haz);
+       Debug.Log("hazard on" + haz);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player" && haz == false && this.tag == "Hazard") 
+        if (collision.gameObject.tag == "Player" && haz == false && this.tag == "KILL") 
         {
             collision.gameObject.transform.position = playerStartPos;
         }
@@ -42,6 +42,7 @@ public class MapTriggers : MonoBehaviour
                 
             }
         }
+       
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -54,6 +55,7 @@ public class MapTriggers : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
+        Debug.Log(collision.gameObject.name);
         if (collision.gameObject.tag == "Draggable")
         {
             haz = true;

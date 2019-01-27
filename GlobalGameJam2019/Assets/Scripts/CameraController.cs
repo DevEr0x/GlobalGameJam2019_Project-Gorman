@@ -6,7 +6,7 @@ public class CameraController : MonoBehaviour
 {
     public GameObject player;
     float interp;
-    float minscroll, maxscroll;
+    public float minscroll, maxscroll;
     float speed;
     // Start is called before the first frame update
     void Start()
@@ -21,7 +21,7 @@ public class CameraController : MonoBehaviour
         if (player.transform.position.x > minscroll && player.transform.position.x < maxscroll)
         {
             Vector3 pos = transform.position;
-            pos.x = Mathf.Lerp(transform.position.x, transform.position.x, interp);
+            pos.x = Mathf.Lerp(transform.position.x, player.transform.position.x, interp);
 
             transform.position = pos;
         }
