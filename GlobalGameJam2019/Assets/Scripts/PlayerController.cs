@@ -116,5 +116,10 @@ public class PlayerController : MonoBehaviour
             puzzle.puzzle = PuzzleManager.puzzChoice.PUZZLE1;
             Destroy(this.gameObject);
         }
+        if(collision.gameObject.tag == "Dialouge")
+        {
+            collision.gameObject.GetComponent<DialougeTrigger>().TriggerDialouge();
+            Destroy(collision);
+        }
     }
 }
