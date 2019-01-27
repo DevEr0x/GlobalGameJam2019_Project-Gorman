@@ -23,15 +23,12 @@ public class MapTriggers : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player" && haz == false && this.tag == "KILL") 
+        if (collision.gameObject.tag == "Player" && haz == false) 
         {
             collision.gameObject.transform.position = playerStartPos;
         }
 
-        if(collision.gameObject.tag == "Draggable")
-        {
-            haz = true;
-        }
+      
 
         if(this.tag == "EnemyTrigger")
         {
@@ -43,21 +40,19 @@ public class MapTriggers : MonoBehaviour
             }
         }
        
+
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Draggable")
-        {
-            haz = false;
-        }
+       
     }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        Debug.Log(collision.gameObject.name);
         if (collision.gameObject.tag == "Draggable")
         {
+            Debug.Log("grgre");
             haz = true;
         }
     }
