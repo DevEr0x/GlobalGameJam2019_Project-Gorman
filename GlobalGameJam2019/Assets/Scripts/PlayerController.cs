@@ -110,6 +110,10 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if(collision.gameObject.tag == "Dialouge"){
+            collision.gameObject.GetComponent<DialougeTrigger>().TriggerDialouge();
+            Destroy(collision);
+        }
 
         if (collision.gameObject.tag == "BALL")
         {
