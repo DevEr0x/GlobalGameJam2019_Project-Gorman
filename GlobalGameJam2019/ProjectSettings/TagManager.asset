@@ -8,6 +8,7 @@ TagManager:
   - Ball
   - PUZZLE
   - KILL
+  - hazard
   layers:
   - Default
   - TransparentFX
@@ -51,9 +52,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: block
+    uniqueID: 3572168743
+    locked: 0
   - name: PuzzBack
     uniqueID: 2449930631
     locked: 0
   - name: Puzzle
     uniqueID: 192049117
+    locked: 0
+  - name: player
+    uniqueID: 1905406015
     locked: 0
