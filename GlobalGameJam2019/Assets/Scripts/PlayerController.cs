@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -120,7 +121,12 @@ public class PlayerController : MonoBehaviour
             Destroy(collision);
         }
 
-        if (collision.gameObject.tag == "BALL")
+        if (collision.gameObject.tag == "Level3")
+        {
+            SceneManager.LoadScene("Level_04");
+        }
+
+            if (collision.gameObject.tag == "BALL")
         {
             puzzle.puzzle = PuzzleManager.puzzChoice.PUZZLE1;
             Destroy(this.gameObject);
