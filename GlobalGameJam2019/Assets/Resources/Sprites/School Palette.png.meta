@@ -32,6 +32,49 @@ TextureImporter:
     21300054: School Palette_27
     21300056: School Palette_28
     21300058: School Palette_29
+    21300060: School Palette_30
+    21300062: School Palette_31
+    21300064: School Palette_32
+    21300066: School Palette_33
+    21300068: School Palette_34
+    21300070: School Palette_35
+    21300072: School Palette_36
+    21300074: School Palette_37
+    21300076: School Palette_38
+    21300078: School Palette_39
+    21300080: School Palette_40
+    21300082: School Palette_41
+    21300084: School Palette_42
+    21300086: School Palette_43
+    21300088: School Palette_44
+    21300090: School Palette_45
+    21300092: School Palette_46
+    21300094: School Palette_47
+    21300096: School Palette_48
+    21300098: School Palette_49
+    21300100: School Palette_50
+    21300102: School Palette_51
+    21300104: School Palette_52
+    21300106: School Palette_53
+    21300108: School Palette_54
+    21300110: School Palette_55
+    21300112: School Palette_56
+    21300114: School Palette_57
+    21300116: School Palette_58
+    21300118: School Palette_59
+    21300120: School Palette_60
+    21300122: School Palette_61
+    21300124: School Palette_62
+    21300126: School Palette_63
+    21300128: School Palette_64
+    21300130: School Palette_65
+    21300132: School Palette_66
+    21300134: School Palette_67
+    21300136: School Palette_68
+    21300138: School Palette_69
+    21300140: School Palette_70
+    21300142: School Palette_71
+    21300144: School Palette_72
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -117,49 +160,9 @@ TextureImporter:
       name: School Palette_0
       rect:
         serializedVersion: 2
-        x: 35
-        y: 747
-        width: 105
-        height: 89
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 213feaaecde8b1940888a3c912630da3
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: School Palette_1
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 736
-        width: 193
-        height: 112
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aa05f5457bfa92348a1eeae5ffbbde4a
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: School Palette_2
-      rect:
-        serializedVersion: 2
-        x: 438
-        y: 747
-        width: 108
+        x: 0
+        y: 824
+        width: 100
         height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -168,7 +171,47 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28e0d386468143648b5b6165cf0e6bcb
+      spriteID: 06e1f144b6d8c604bb1958c44c1e2146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School Palette_1
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 824
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e91f3edfbaffe24a8368c83755a6e47
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School Palette_2
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 824
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26b039a466041dc4cbc5a3028f04f3b4
       vertices: []
       indices: 
       edges: []
@@ -177,10 +220,10 @@ TextureImporter:
       name: School Palette_3
       rect:
         serializedVersion: 2
-        x: 568
-        y: 636
-        width: 48
-        height: 118
+        x: 300
+        y: 824
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -188,7 +231,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e56c2b8e19c854459ac4b86ad4dd19b
+      spriteID: 609161d730e4b7e45a889df59728124c
       vertices: []
       indices: 
       edges: []
@@ -197,10 +240,10 @@ TextureImporter:
       name: School Palette_4
       rect:
         serializedVersion: 2
-        x: 619
-        y: 636
-        width: 115
-        height: 118
+        x: 400
+        y: 824
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,7 +251,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 464138c14d5f2aa40b314d4a158c996d
+      spriteID: dda23ce217b98be419d57e204c2b67af
       vertices: []
       indices: 
       edges: []
@@ -217,10 +260,10 @@ TextureImporter:
       name: School Palette_5
       rect:
         serializedVersion: 2
-        x: 787
-        y: 522
-        width: 217
-        height: 325
+        x: 500
+        y: 824
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,7 +271,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d329c1713f29b01478b0d31588ab16b4
+      spriteID: 214859a5830f90f40b20b13cae1708f5
       vertices: []
       indices: 
       edges: []
@@ -237,10 +280,10 @@ TextureImporter:
       name: School Palette_6
       rect:
         serializedVersion: 2
-        x: 52
-        y: 696
-        width: 48
-        height: 11
+        x: 700
+        y: 824
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -248,7 +291,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0aee5e9f37952343a4b2a26c44978b9
+      spriteID: d6827f1ff2b148246a883177d494dfc2
       vertices: []
       indices: 
       edges: []
@@ -257,10 +300,10 @@ TextureImporter:
       name: School Palette_7
       rect:
         serializedVersion: 2
-        x: 115
-        y: 696
-        width: 49
-        height: 14
+        x: 800
+        y: 824
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,7 +311,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa9241221d3f93844b460968eeadac8f
+      spriteID: 505d9daf4c4cc0b4082f280558c781ba
       vertices: []
       indices: 
       edges: []
@@ -277,10 +320,10 @@ TextureImporter:
       name: School Palette_8
       rect:
         serializedVersion: 2
-        x: 179
-        y: 696
-        width: 45
-        height: 14
+        x: 900
+        y: 824
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,7 +331,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d78731fda64bb824caad85ca7ac301f7
+      spriteID: 544ffa0a328705e419f2d66ef0367624
       vertices: []
       indices: 
       edges: []
@@ -297,10 +340,10 @@ TextureImporter:
       name: School Palette_9
       rect:
         serializedVersion: 2
-        x: 246
-        y: 696
-        width: 48
-        height: 14
+        x: 0
+        y: 724
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -308,7 +351,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7cc8ce84bb4dec94894b797614819717
+      spriteID: acb22bf727b328d4f9e297489aae6d54
       vertices: []
       indices: 
       edges: []
@@ -317,10 +360,10 @@ TextureImporter:
       name: School Palette_10
       rect:
         serializedVersion: 2
-        x: 316
-        y: 696
-        width: 45
-        height: 16
+        x: 100
+        y: 724
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -328,7 +371,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 693bd2540bb80344ba751796b1209a80
+      spriteID: a4d8a3e8b83a50b488e0482f8ca8c2e5
       vertices: []
       indices: 
       edges: []
@@ -337,10 +380,10 @@ TextureImporter:
       name: School Palette_11
       rect:
         serializedVersion: 2
-        x: 380
-        y: 692
-        width: 32
-        height: 15
+        x: 200
+        y: 724
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -348,7 +391,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0c7ab2582e5b4a4d9a90f1fc0fb5fd7
+      spriteID: b560d83a1edaa1d4ca783a8fb726110f
       vertices: []
       indices: 
       edges: []
@@ -357,10 +400,10 @@ TextureImporter:
       name: School Palette_12
       rect:
         serializedVersion: 2
-        x: 424
-        y: 693
-        width: 45
-        height: 17
+        x: 300
+        y: 724
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -368,7 +411,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05dc59f18c70fc047a19547aa513bf60
+      spriteID: a0cf1cbc31b5acc4cb94a53e234b87d7
       vertices: []
       indices: 
       edges: []
@@ -377,10 +420,10 @@ TextureImporter:
       name: School Palette_13
       rect:
         serializedVersion: 2
-        x: 732
-        y: 668
-        width: 32
-        height: 49
+        x: 400
+        y: 724
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -388,7 +431,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67787efbe03317d43b8da88de79a4fb2
+      spriteID: f1fe25a97cd11ce4098ef9ce3149ad29
       vertices: []
       indices: 
       edges: []
@@ -397,10 +440,10 @@ TextureImporter:
       name: School Palette_14
       rect:
         serializedVersion: 2
-        x: 31
-        y: 619
-        width: 42
-        height: 45
+        x: 500
+        y: 724
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -408,7 +451,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3bd2d4ad13325d448931b659be933b7d
+      spriteID: ea8aa1d497e23a04bb76580617b9fb06
       vertices: []
       indices: 
       edges: []
@@ -417,10 +460,10 @@ TextureImporter:
       name: School Palette_15
       rect:
         serializedVersion: 2
-        x: 82
-        y: 619
-        width: 42
-        height: 45
+        x: 600
+        y: 724
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -428,7 +471,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5d71a48371b29a4caa2aa534f891eb7
+      spriteID: dabcc6f7516f2ce4ca9671714e7d02b9
       vertices: []
       indices: 
       edges: []
@@ -437,10 +480,10 @@ TextureImporter:
       name: School Palette_16
       rect:
         serializedVersion: 2
-        x: 128
-        y: 619
-        width: 42
-        height: 45
+        x: 700
+        y: 724
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -448,7 +491,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2c9b70f38caeeb45b8426030a236a26
+      spriteID: 4c3d22013b3a74f449d5d2065aad39af
       vertices: []
       indices: 
       edges: []
@@ -457,10 +500,10 @@ TextureImporter:
       name: School Palette_17
       rect:
         serializedVersion: 2
-        x: 179
-        y: 619
-        width: 41
-        height: 45
+        x: 800
+        y: 724
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -468,7 +511,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f847de829cea6c48888dd57dffeebad
+      spriteID: ad5c97faebe538b4383ede02cb992e6b
       vertices: []
       indices: 
       edges: []
@@ -477,10 +520,10 @@ TextureImporter:
       name: School Palette_18
       rect:
         serializedVersion: 2
-        x: 230
-        y: 619
-        width: 42
-        height: 45
+        x: 900
+        y: 724
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -488,7 +531,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1289c1ff7808eb3458c909870b4bed8c
+      spriteID: c93bddd7d5688e4439d91c4497b006cc
       vertices: []
       indices: 
       edges: []
@@ -497,10 +540,10 @@ TextureImporter:
       name: School Palette_19
       rect:
         serializedVersion: 2
-        x: 280
-        y: 619
-        width: 41
-        height: 45
+        x: 0
+        y: 624
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -508,7 +551,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40d931f734fb84e498df982eb39cc065
+      spriteID: ac73334ac53c297438bdd6b6ef0ff52e
       vertices: []
       indices: 
       edges: []
@@ -517,10 +560,10 @@ TextureImporter:
       name: School Palette_20
       rect:
         serializedVersion: 2
-        x: 336
-        y: 619
-        width: 44
-        height: 44
+        x: 100
+        y: 624
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -528,7 +571,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb2b474cc01e37f4db68a5435e64fb9b
+      spriteID: a972fddbfbb91c14ba534f5a1a4f24d8
       vertices: []
       indices: 
       edges: []
@@ -537,10 +580,10 @@ TextureImporter:
       name: School Palette_21
       rect:
         serializedVersion: 2
-        x: 391
-        y: 619
-        width: 37
-        height: 45
+        x: 200
+        y: 624
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -548,7 +591,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54472e3dd098e49488cd6af839ff3287
+      spriteID: 0e7beb6f419a22e4cb90fe298226d95e
       vertices: []
       indices: 
       edges: []
@@ -557,10 +600,10 @@ TextureImporter:
       name: School Palette_22
       rect:
         serializedVersion: 2
-        x: 448
-        y: 636
-        width: 76
-        height: 14
+        x: 300
+        y: 624
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -568,7 +611,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd519eb6b9d392d40bed07fe905ea06a
+      spriteID: 1e13645930a9daa47accef9229a0f298
       vertices: []
       indices: 
       edges: []
@@ -577,10 +620,10 @@ TextureImporter:
       name: School Palette_23
       rect:
         serializedVersion: 2
-        x: 8
-        y: 420
-        width: 105
-        height: 164
+        x: 400
+        y: 624
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -588,7 +631,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34a124af47579fe40a79eedb2d4db357
+      spriteID: e2d8abf7c8a5918409ca2be9baa9f4a6
       vertices: []
       indices: 
       edges: []
@@ -597,10 +640,10 @@ TextureImporter:
       name: School Palette_24
       rect:
         serializedVersion: 2
-        x: 151
-        y: 512
-        width: 66
-        height: 64
+        x: 500
+        y: 624
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -608,7 +651,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 544670a00fc243a458e4d3b34f845c13
+      spriteID: f4e29d97de9cbcd458655fba8e1e83b2
       vertices: []
       indices: 
       edges: []
@@ -617,10 +660,10 @@ TextureImporter:
       name: School Palette_25
       rect:
         serializedVersion: 2
-        x: 246
-        y: 414
-        width: 330
-        height: 180
+        x: 600
+        y: 624
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -628,7 +671,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49a4ccb842be4cb4ca6198e4842b0a86
+      spriteID: ac7f900cc7fa1314791d316163c3974e
       vertices: []
       indices: 
       edges: []
@@ -637,10 +680,10 @@ TextureImporter:
       name: School Palette_26
       rect:
         serializedVersion: 2
-        x: 612
-        y: 418
-        width: 136
-        height: 188
+        x: 700
+        y: 624
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -648,7 +691,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b4bd826887fd5a48b645492a8b04bce
+      spriteID: 51edbe8af6ba72e408965230eb0347fe
       vertices: []
       indices: 
       edges: []
@@ -657,10 +700,10 @@ TextureImporter:
       name: School Palette_27
       rect:
         serializedVersion: 2
-        x: 149
-        y: 428
-        width: 68
-        height: 68
+        x: 800
+        y: 624
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -668,7 +711,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77d671901e4343e4bbf63c3e54f72e48
+      spriteID: 12ed2bb0d5a452f48aa7e199b9dcbd3e
       vertices: []
       indices: 
       edges: []
@@ -677,10 +720,10 @@ TextureImporter:
       name: School Palette_28
       rect:
         serializedVersion: 2
-        x: 3
-        y: 167
-        width: 566
-        height: 226
+        x: 900
+        y: 624
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -688,7 +731,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d679c520724638f4da4f60abe3846e1a
+      spriteID: 95cad2b8508f0684387b6216d1bca909
       vertices: []
       indices: 
       edges: []
@@ -697,10 +740,10 @@ TextureImporter:
       name: School Palette_29
       rect:
         serializedVersion: 2
-        x: 604
-        y: 167
-        width: 140
-        height: 218
+        x: 0
+        y: 524
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -708,7 +751,867 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84ec0ba2429eff846a06f8a31e474e00
+      spriteID: 9c3a5e8fc15c5ec44a11972588a14fc7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School Palette_30
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 524
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d68651e5f55e44b42b5b4388ffb96b7a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School Palette_31
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 524
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59e5e8f1b6889f74abaa1449e9270acd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School Palette_32
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 524
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 576ba1d096d47a14c8bdc9b8aaf10db7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School Palette_33
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 524
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b02249e448d3c4b4fa1d6d812b76ca5d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School Palette_34
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 524
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b161c24ea7c2fcb459af918763f78185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School Palette_35
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 524
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7fa1d1dc440cfe42923aab05c774e39
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School Palette_36
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 524
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 496822b8e60300446996dde896404c39
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School Palette_37
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 524
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 451e54b64258b574798ac9df0a506b1c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School Palette_38
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 524
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb3c96a630861be46a2ae057c1666601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School Palette_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 424
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 004bc80c2f9d42144a95ec27dad1a2af
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School Palette_40
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 424
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2d9aa780b15deb499e85d5c912289ab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School Palette_41
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 424
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cc9424ea22203d428b1f58bfcb68ea7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School Palette_42
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 424
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3797a2821c0c5ed4d9c24828a3e04fcd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School Palette_43
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 424
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc739948c1f929648bba0f188fe2acbd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School Palette_44
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 424
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ce64cd566469f64592099dc610fe409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School Palette_45
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 424
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23dd667ddcc6215409d92bfd0488dc7d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School Palette_46
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 424
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e875a69f1d02ce646b2bc5998591a35c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School Palette_47
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 424
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26494997126fc874aa776a5fb647f6d9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School Palette_48
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 424
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f004e09d4fd48bc4692ca4e757decec5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School Palette_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 324
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 502208b81bae4bf43aa7a88da15c379f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School Palette_50
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 324
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6387f44469973714e85ea427fd035e91
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School Palette_51
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 324
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9346c2fed13c24a43b66e4fee2b1baaa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School Palette_52
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 324
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50340aa4194ec2345a423eef881198dd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School Palette_53
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 324
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4d7d7b76fc1c8c48b2d9557662246dd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School Palette_54
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 324
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13077f246b056b641b367a5eafa1edbb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School Palette_55
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 324
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96b901c3554e0274dafe3eb5f9426dc4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School Palette_56
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 324
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb7159c537c3cd24490b349678cca93a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School Palette_57
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 468c0feab89ebdf40b20452ede361ea7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School Palette_58
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 224
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad1afa21a4c35dc408c0cc1fcc512fa5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School Palette_59
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 224
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd3748ed2f9162845973fdcfd680b377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School Palette_60
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 224
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3abf27e8f80c7c04a8dc191cef4721f1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School Palette_61
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 224
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fefa343974d9a60409a75d7c281ff5ea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School Palette_62
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 224
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81d765782881bff49a79a6d3e6bda311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School Palette_63
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 224
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcf4fa330f683a4408ba9a006b9e5c0c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School Palette_64
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 224
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81527fcfc6f49ab488ea633969742aca
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School Palette_65
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 124
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91b3f86c8aee4844e8306276b4b0c7d1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School Palette_66
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 124
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8450a38b685ee374eabdbc15e3ba3e57
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School Palette_67
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 124
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb8ff46dda67d54489af6c1eb4f16900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School Palette_68
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 124
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35bfdee7281a2cc43ac450a9ebb2cdfe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School Palette_69
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 124
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 198bba7d4d996854284f29696a3f4baa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School Palette_70
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 124
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a1737390acb5f244a807652c51f6681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School Palette_71
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 124
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 390266b1e86a7834787769883a68e041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School Palette_72
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 124
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b0c892c78d629347889944d9b19fb29
       vertices: []
       indices: 
       edges: []
@@ -716,7 +1619,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: ab5953276c1bf474297bebed8c7c00ae
+    spriteID: 09deeb24057fc074eb5ae2b8f274c248
     vertices: []
     indices: 
     edges: []
