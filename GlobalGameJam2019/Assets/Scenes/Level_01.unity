@@ -52551,8 +52551,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialouge:
-    name: []
-    sentences: []
+    name:
+    - 
+    - 
+    sentences:
+    - It has to start with a B. I just know it does.
+    - What was his name?
 --- !u!61 &1048089230
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -52624,8 +52628,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialouge:
-    name: []
-    sentences: []
+    name:
+    - Gorman
+    sentences:
+    - Yes.. I did have a dog. B.. barney? No.. What was his name?
 --- !u!61 &1107037891
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -52943,7 +52949,7 @@ MonoBehaviour:
     sentences:
     - A.. a dog. I remember a dog.
     - Yeah, there was definitley a dog with me when I came here.
-    - 
+    - Was it my dog? Did I have a dog? Do I still have a dog?
 --- !u!61 &1681472021
 BoxCollider2D:
   m_ObjectHideFlags: 0
