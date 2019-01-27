@@ -116,5 +116,10 @@ public class PlayerController : MonoBehaviour
             puzzle.puzzle = PuzzleManager.puzzChoice.PUZZLE1;
             Destroy(this.gameObject);
         }
+        else if (collision.gameObject.tag == "MOP")
+        {
+            puzzle.puzzle = PuzzleManager.puzzChoice.PUZZLE2;
+            Destroy(this.gameObject);
+        }
     }
 }
