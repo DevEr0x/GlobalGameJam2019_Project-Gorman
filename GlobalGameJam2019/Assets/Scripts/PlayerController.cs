@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     Rigidbody2D player;
 
-
+    public PuzzleManager puzzle;
     Animator anim;
     public float speed;
 
@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     {
         player = this.GetComponent<Rigidbody2D>();
         anim = this.GetComponent<Animator>();
+        puzzle = puzzle.GetComponent<PuzzleManager>();
     }
 
     // Update is called once per frame
@@ -92,5 +93,13 @@ public class PlayerController : MonoBehaviour
         
     }
 
-
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log(collision.gameObject.tag);
+        if (collision.gameObject.tag == "BALL")
+        {
+            puzzle.puzzle = PuzzleManager.puzzChoice.PUZZLE1;
+            Destroy(this.gameObject);
+        }
+    }
 }

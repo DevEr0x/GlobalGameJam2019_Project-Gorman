@@ -7,6 +7,7 @@ public class PuzzleManager : MonoBehaviour
     public GameObject[] puzzles;
     public GameObject puzzSpawn;
     public GameObject pieces;
+    public GameManager game;
     Transform back;
     bool spawned = false;
 
@@ -40,13 +41,15 @@ public class PuzzleManager : MonoBehaviour
             case puzzChoice.PUZZLE1:
                 if(!spawned){
                     spawned = true;
-                    pieces = Instantiate(puzzles[0], puzzSpawn.transform.position, Quaternion.identity, puzzSpawn.transform);
+                    Camera.main.transform.SetPositionAndRotation(new Vector3(0,0,-1),Quaternion.identity);
+                    pieces = Instantiate(puzzles[0], new Vector2(Camera.main.transform.position.x,Camera.main.transform.position.y), Quaternion.identity, puzzSpawn.transform);
                     PuzzleADD(pieces);
                 }
                 if (PuzzleCheck(puzzles[0], pieces))
                 {
                     puzzle = puzzChoice.NONE;
                     state = STATE.BALL;
+                    game.swap = true;
                 }
                 break;
             case puzzChoice.PUZZLE2:
