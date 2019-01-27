@@ -42,14 +42,14 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: New Layer
-    uniqueID: 414915677
-    locked: 0
   - name: Background
     uniqueID: 1745440143
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Player
+    uniqueID: 414915677
     locked: 0
   - name: PuzzBack
     uniqueID: 2449930631
