@@ -11,7 +11,13 @@ public class IntroScript : MonoBehaviour
     }
     private void Update(){
         if(DialougeManager.inConversation == false){
-            if(pushed == true){
+            if(pushed == true) {
+                if (SceneManager.GetActiveScene().name == "Conclusion")
+                {
+                    Debug.Log("yes");
+                    Application.Quit();
+                }
+                pushed = false;
                 SceneManager.LoadScene("Level_01");
             }
 
