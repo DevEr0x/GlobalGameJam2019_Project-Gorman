@@ -18,25 +18,23 @@ public class CameraController : MonoBehaviour
     void Update()
     {
        interp = speed * Time.deltaTime;
+        Vector3 pos = transform.position;
         if (player.transform.position.x > minscrollX && player.transform.position.x < maxscrollX)
         {
-            Vector3 pos = transform.position;
             pos.x = Mathf.Lerp(transform.position.x, player.transform.position.x, interp);
 
-            transform.position = pos;
         }
         if (player.transform.position.y > minscrollY && player.transform.position.y < maxscrollY)
         {
-            Vector3 pos = transform.position;
             pos.y = Mathf.Lerp(transform.position.y, player.transform.position.y, interp);
 
-            transform.position = pos;
         }
+        transform.position = pos;
 
     }
 
-    
-        
-        
-    
+
+
+
+
 }
