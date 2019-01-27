@@ -10,8 +10,6 @@ public class GameManager : MonoBehaviour
     public GameObject puzz;
     PuzzleManager puuuuu;
     public bool swap = false;
-
-    public static bool firstDone = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,14 +21,8 @@ public class GameManager : MonoBehaviour
     {
         if (puuuuu.state == PuzzleManager.STATE.BALL && swap)
         {
-            if (firstDone == false)
-            {
-                GameObject.Find("Dialouge07").GetComponent<DialougeTrigger>().TriggerDialouge();
-                PlayerController.disablecamera = false;
-                firstDone = true;
-            }
-            //SceneManager.LoadScene("Level_02", LoadSceneMode.Single);
-            //swap = false;
+            SceneManager.LoadScene("Level_02", LoadSceneMode.Single);
+            swap = false;
         }
         else if (puuuuu.state == PuzzleManager.STATE.MOP && swap)
         {

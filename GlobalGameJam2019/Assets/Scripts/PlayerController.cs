@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     Rigidbody2D player;
 
-    public static bool disablecamera = false;
+    public bool disablecamera = false;
     public PuzzleManager puzzle;
     public Camera cam;
     Animator anim;
@@ -123,7 +123,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.tag == "BALL")
         {
             puzzle.puzzle = PuzzleManager.puzzChoice.PUZZLE1;
-            disablecamera = true;
+            Destroy(this.gameObject);
         }
         else if (collision.gameObject.tag == "MOP")
         {
