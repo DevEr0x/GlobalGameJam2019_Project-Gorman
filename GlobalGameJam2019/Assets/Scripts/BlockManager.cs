@@ -5,7 +5,7 @@ using UnityEngine;
 public class BlockManager : MonoBehaviour
 {
     bool dragging = false;
-    Transform drag;
+    Rigidbody2D drag;
     public PuzzleManager puzzle;
 
     Vector3 mousePos;
@@ -29,8 +29,9 @@ public class BlockManager : MonoBehaviour
                 {
                     if (!dragging)
                     {
-                        drag = hit.collider.gameObject.GetComponent<Transform>();
+                        drag = hit.collider.gameObject.GetComponent<Rigidbody2D>();
                         dragging = true;
+                        drag.bodyType = RigidbodyType2D.Dynamic;
                     }
 
                 }
@@ -49,12 +50,14 @@ public class BlockManager : MonoBehaviour
         if (Input.GetMouseButtonUp(0))
         {
             dragging = false;
+            drag.bodyType = RigidbodyType2D.Kinematic;
             drag = null;
         }
         if (dragging)
         {
-            drag.transform.position = new Vector2(mousePos.x, mousePos.y);
-        }
+            //drag.transform.position = ;
+            drag.transform.position = Vector2.MoveTowards(drag.transform.position, new Vector2(mousePos.x, mousePos.y), 0.1f);
+        }           
     }
 
    
