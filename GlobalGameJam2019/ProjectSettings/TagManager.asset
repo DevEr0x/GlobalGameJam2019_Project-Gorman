@@ -15,6 +15,7 @@ TagManager:
   - Undefined
   - Level3
   - RING
+  - HAT
   layers:
   - Default
   - TransparentFX

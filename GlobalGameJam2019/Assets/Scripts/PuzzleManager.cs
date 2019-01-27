@@ -96,7 +96,7 @@ public class PuzzleManager : MonoBehaviour
                 if (PuzzleCheck(puzzles[3], pieces))
                 {
                     puzzle = puzzChoice.NONE;
-                    state = STATE.RING;
+                    state = STATE.HAT;
                     spawned = false;
                     game.swap = true;
                 }
