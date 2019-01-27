@@ -72,6 +72,7 @@ public class BlockManager : MonoBehaviour
         if (dragging)
         {
             //drag.transform.position = ;
+            if (drag!=null)
             drag.transform.position = Vector2.MoveTowards(drag.transform.position, new Vector2(mousePos.x, mousePos.y), 0.1f);
         }           
     }
