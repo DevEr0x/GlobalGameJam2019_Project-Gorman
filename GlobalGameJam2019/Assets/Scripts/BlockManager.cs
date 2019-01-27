@@ -35,6 +35,15 @@ public class BlockManager : MonoBehaviour
                     }
 
                 }
+                else if (hit.collider.gameObject.tag == "Draggable" && hit.collider.gameObject.name == "Spec")
+                {
+                    if (!dragging)
+                    {
+                        drag = hit.collider.gameObject.GetComponent<Rigidbody2D>();
+                        dragging = true;
+                        drag.bodyType = RigidbodyType2D.Dynamic;
+                    }
+                }
                 else if (hit.collider.gameObject.tag == "PUZZLE")
                 {
                     puzzle.puzzle = PuzzleManager.puzzChoice.PUZZLE2;
@@ -49,9 +58,18 @@ public class BlockManager : MonoBehaviour
         }
         if (Input.GetMouseButtonUp(0))
         {
-            dragging = false;
-            drag.bodyType = RigidbodyType2D.Kinematic;
-            drag = null;
+            if (drag.gameObject.name == "Spec")
+            {
+                dragging = false;
+                drag = null;
+            }
+            else
+            {
+                dragging = false;
+                drag.bodyType = RigidbodyType2D.Kinematic;
+                drag = null;
+            }
+            
         }
         if (dragging)
         {
