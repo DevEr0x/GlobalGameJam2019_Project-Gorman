@@ -9,6 +9,7 @@ TagManager:
   - PUZZLE
   - KILL
   - hazard
+  - BALL
   layers:
   - Default
   - TransparentFX

@@ -18,7 +18,6 @@ public class MapTriggers : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       Debug.Log("hazard on" + haz);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -52,7 +51,6 @@ public class MapTriggers : MonoBehaviour
     {
         if (collision.gameObject.tag == "Draggable")
         {
-            Debug.Log("grgre");
             haz = true;
         }
     }

@@ -7,31 +7,34 @@ public class GameManager : MonoBehaviour
 {
     public EnemyPatrol enemy;
     EnemyPatrol inst;
-    public PuzzleManager puzz;
+    public GameObject puzz;
+    PuzzleManager puuuuu;
+    public bool swap = false;
     // Start is called before the first frame update
     void Start()
     {
-        puzz = puzz.GetComponent<PuzzleManager>();
+        puuuuu = puzz.GetComponent<PuzzleManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        //if (puzz.state == PuzzleManager.STATE.BALL)
-        //{
-        //    SceneManager.SetActiveScene(SceneManager.GetSceneByBuildIndex(2));
-        //}
-        //else if (puzz.state == PuzzleManager.STATE.MOP)
-        //{
-        //    SceneManager.LoadScene("Level_03", LoadSceneMode.Additive);
-        //}
-        //else if (puzz.state == PuzzleManager.STATE.RING)
-        //{
-        //    SceneManager.SetActiveScene(SceneManager.GetSceneByBuildIndex(4));
-        //}
-        //else if (puzz.state == PuzzleManager.STATE.HAT)
-        //{
-        //    SceneManager.SetActiveScene(SceneManager.GetSceneByName("End"));
-        //}
+        if (puuuuu.state == PuzzleManager.STATE.BALL && swap)
+        {
+            SceneManager.LoadScene("Level_02", LoadSceneMode.Single);
+            swap = false;
+        }
+        else if (puuuuu.state == PuzzleManager.STATE.MOP && swap)
+        {
+            SceneManager.LoadScene("Level_03", LoadSceneMode.Single);
+        }
+        else if (puuuuu.state == PuzzleManager.STATE.RING && swap)
+        {
+            SceneManager.LoadScene("Level_04", LoadSceneMode.Single);
+        }
+        else if (puuuuu.state == PuzzleManager.STATE.HAT && swap)
+        {
+            SceneManager.LoadScene("Level_03", LoadSceneMode.Single);
+        }
     }
 }
