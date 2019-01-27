@@ -5,6 +5,8 @@ using UnityEngine;
 public class EnemyPatrol : MonoBehaviour
 {
     public float maxDist;
+    public GameObject cam;
+    Vector3 camStart;
     public GameObject player;
     public GameObject ball;
     GameObject ballInst;
@@ -31,7 +33,8 @@ public class EnemyPatrol : MonoBehaviour
         CIRCULAR,
         DIAGONAL,
         BALL,
-        PLAYERFOLLOW
+        PLAYERFOLLOW,
+        NONE
     }
 
 
@@ -41,7 +44,7 @@ public class EnemyPatrol : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        camStart = cam.transform.position;
         playerStartPos = player.transform.position;
         blocked = false;
         hitWall = false;
@@ -96,6 +99,8 @@ public class EnemyPatrol : MonoBehaviour
                     //  transform.LookAt(player.transform);
                     transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
                     break;
+                case patrolPat.NONE:
+                    break;
             }
         }
 
@@ -125,11 +130,13 @@ public class EnemyPatrol : MonoBehaviour
         if(collision.gameObject.tag == "Player")
         {
             player.transform.position = playerStartPos;
+            cam.transform.position = camStart;
             if(currentPat == patrolPat.PLAYERFOLLOW)
             {
                 currentPat = previousPat;
                 transform.position = startpos;
             }
+
         }
     }
 
