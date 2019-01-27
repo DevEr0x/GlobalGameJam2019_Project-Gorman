@@ -110,15 +110,16 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+
         if (collision.gameObject.tag == "BALL")
         {
             puzzle.puzzle = PuzzleManager.puzzChoice.PUZZLE1;
             Destroy(this.gameObject);
         }
-        else if (collision.gameObject.tag == "MOP")
+        if(collision.gameObject.tag == "Dialouge")
         {
-            puzzle.puzzle = PuzzleManager.puzzChoice.PUZZLE2;
-            Destroy(this.gameObject);
+            collision.gameObject.GetComponent<DialougeTrigger>().TriggerDialouge();
+            Destroy(collision);
         }
     }
 }

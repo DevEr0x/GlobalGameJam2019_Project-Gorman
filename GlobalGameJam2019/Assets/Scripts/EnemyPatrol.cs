@@ -49,7 +49,6 @@ public class EnemyPatrol : MonoBehaviour
         blocked = false;
         hitWall = false;
         startpos = transform.position;
-        Debug.Log(transform.position.x);
         rb = GetComponent<Rigidbody2D>();
     }
 

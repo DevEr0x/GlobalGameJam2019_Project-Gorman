@@ -27,17 +27,14 @@ public class GameManager : MonoBehaviour
         else if (puuuuu.state == PuzzleManager.STATE.MOP && swap)
         {
             SceneManager.LoadScene("Level_03", LoadSceneMode.Single);
-            swap = false;
         }
         else if (puuuuu.state == PuzzleManager.STATE.RING && swap)
         {
             SceneManager.LoadScene("Level_04", LoadSceneMode.Single);
-            swap = false;
         }
         else if (puuuuu.state == PuzzleManager.STATE.HAT && swap)
         {
             SceneManager.LoadScene("Level_03", LoadSceneMode.Single);
-            swap = false;
         }
     }
 }

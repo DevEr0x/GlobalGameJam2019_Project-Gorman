@@ -10,7 +10,7 @@ TagManager:
   - KILL
   - hazard
   - BALL
-  - MOP
+  - Dialouge
   layers:
   - Default
   - TransparentFX
