@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
         else if (puuuuu.state == PuzzleManager.STATE.MOP && swap)
         {
             SceneManager.LoadScene("Level_03", LoadSceneMode.Single);
+            swap = false;
         }
         else if (puuuuu.state == PuzzleManager.STATE.RING && swap)
         {

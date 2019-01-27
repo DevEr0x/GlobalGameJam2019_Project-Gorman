@@ -49,6 +49,7 @@ public class PuzzleManager : MonoBehaviour
                 {
                     puzzle = puzzChoice.NONE;
                     state = STATE.BALL;
+                    spawned = false;
                     game.swap = true;
                 }
                 break;
@@ -56,13 +57,16 @@ public class PuzzleManager : MonoBehaviour
                 if (!spawned)
                 {
                     spawned = true;
-                    pieces = Instantiate(puzzles[1], puzzSpawn.transform.position, Quaternion.identity, puzzSpawn.transform);
+                    Camera.main.transform.SetPositionAndRotation(new Vector3(0, 0, -1), Quaternion.identity);
+                    pieces = Instantiate(puzzles[1], new Vector2(Camera.main.transform.position.x, Camera.main.transform.position.y), Quaternion.identity, puzzSpawn.transform);
                     PuzzleADD(pieces);
                 }
                 if (PuzzleCheck(puzzles[1], pieces))
                 {
                     puzzle = puzzChoice.NONE;
                     state = STATE.MOP;
+                    spawned = false;
+                    game.swap = true;
                 }
                 break;
             case puzzChoice.NONE:

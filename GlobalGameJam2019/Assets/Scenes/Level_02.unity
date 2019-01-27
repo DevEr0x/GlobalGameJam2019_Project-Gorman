@@ -309,7 +309,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1284294623, guid: 6ef3d2f5414af3347893c8c5baa0cbcb, type: 3}
       propertyPath: m_Name
-      value: PuzzSpawn 1
+      value: PuzzSpawn
       objectReference: {fileID: 0}
     - target: {fileID: 1284294624, guid: 6ef3d2f5414af3347893c8c5baa0cbcb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -54172,6 +54172,11 @@ PrefabInstance:
     - target: {fileID: 6218789672292779674, guid: 3373874b2b6695a489142c1b3647c0d7,
         type: 3}
       propertyPath: m_Name
+      value: MOP
+      objectReference: {fileID: 0}
+    - target: {fileID: 6218789672292779674, guid: 3373874b2b6695a489142c1b3647c0d7,
+        type: 3}
+      propertyPath: m_TagString
       value: MOP
       objectReference: {fileID: 0}
     - target: {fileID: 4133114973621012779, guid: 3373874b2b6695a489142c1b3647c0d7,
