@@ -118,6 +118,7 @@ public class PlayerController : MonoBehaviour
         }
         else if (collision.gameObject.tag == "MOP")
         {
+            Debug.Log("Mop collide");
             puzzle.puzzle = PuzzleManager.puzzChoice.PUZZLE2;
             Destroy(this.gameObject);
         }

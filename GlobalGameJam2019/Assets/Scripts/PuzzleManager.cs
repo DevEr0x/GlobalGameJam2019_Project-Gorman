@@ -56,6 +56,7 @@ public class PuzzleManager : MonoBehaviour
             case puzzChoice.PUZZLE2:
                 if (!spawned)
                 {
+                    Debug.Log("Spawn Try");
                     spawned = true;
                     Camera.main.transform.SetPositionAndRotation(new Vector3(0, 0, -1), Quaternion.identity);
                     pieces = Instantiate(puzzles[1], new Vector2(Camera.main.transform.position.x, Camera.main.transform.position.y), Quaternion.identity, puzzSpawn.transform);
