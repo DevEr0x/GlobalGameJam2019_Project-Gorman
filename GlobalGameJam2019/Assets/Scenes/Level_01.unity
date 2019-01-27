@@ -87829,6 +87829,11 @@ PrefabInstance:
       propertyPath: puzzSpawn
       value: 
       objectReference: {fileID: 1284294623}
+    - target: {fileID: 2749626825159647503, guid: aeb5fbcdf9f0d6c46b82379ade0d082e,
+        type: 3}
+      propertyPath: puzzle
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2749626825159647497, guid: aeb5fbcdf9f0d6c46b82379ade0d082e,
         type: 3}
       propertyPath: m_LocalPosition.x
