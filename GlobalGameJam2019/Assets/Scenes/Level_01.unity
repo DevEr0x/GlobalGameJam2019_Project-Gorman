@@ -191,7 +191,7 @@ PrefabInstance:
     - target: {fileID: 8580359826161753794, guid: 019473760e3c11e439b92eb279e23827,
         type: 3}
       propertyPath: m_Name
-      value: Block
+      value: Spec
       objectReference: {fileID: 0}
     - target: {fileID: 8580359826161753794, guid: 019473760e3c11e439b92eb279e23827,
         type: 3}
@@ -87779,6 +87779,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 2749626825159647503, guid: aeb5fbcdf9f0d6c46b82379ade0d082e,
+        type: 3}
+      propertyPath: puzzSpawn
+      value: 
+      objectReference: {fileID: 1284294623}
     - target: {fileID: 2749626825159647497, guid: aeb5fbcdf9f0d6c46b82379ade0d082e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -87834,11 +87839,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2749626825159647503, guid: aeb5fbcdf9f0d6c46b82379ade0d082e,
-        type: 3}
-      propertyPath: puzzSpawn
-      value: 
-      objectReference: {fileID: 1284294623}
     - target: {fileID: 2749626826547245814, guid: aeb5fbcdf9f0d6c46b82379ade0d082e,
         type: 3}
       propertyPath: player
