@@ -51632,7 +51632,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 931012662}
-  cam: {fileID: 0}
 --- !u!4 &1570339887 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1755083816819458351, guid: 643210d4be973f14aa4a121cf40f0c5d,
