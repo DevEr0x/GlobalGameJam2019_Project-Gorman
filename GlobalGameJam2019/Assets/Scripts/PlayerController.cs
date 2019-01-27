@@ -7,8 +7,11 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D player;
 
     public PuzzleManager puzzle;
+    public Camera cam;
     Animator anim;
     public float speed;
+    float interp;
+    public float minscrollX, maxscrollX, minscrollY, maxscrollY;
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +24,19 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-       
+        interp = speed * Time.deltaTime;
+        Vector3 pos = cam.transform.position;
+        if (transform.position.x > minscrollX && transform.position.x < maxscrollX)
+        {
+            pos.x = Mathf.Lerp(cam.transform.position.x, transform.position.x, interp);
+
+        }
+        if (transform.position.y > minscrollY && transform.position.y < maxscrollY)
+        {
+            pos.y = Mathf.Lerp(cam.transform.position.y, transform.position.y, interp);
+
+        }
+        cam.transform.position = pos;
 
         if (Input.GetAxis("Horizontal") > 0) {
             anim.SetBool("isFacingRight", true);
